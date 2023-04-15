@@ -9,16 +9,14 @@ public class Main {
         while (true) {
             System.out.print("Введите команду (q - для выхода), (s - для ввода команды): ");
             String command = scanner.next();
-            switch (command) {
-                case ("q"):
-                    break;
-                case ("s"):
-                    System.out.print("Введите первое число: ");
-                    double a = scanner.nextDouble();
-                    System.out.print("Введите оператор (+, -, *, /): ");
-                    String operator = scanner.next();
-                    System.out.print("Введите второе число: ");
-                    double b = scanner.nextDouble();
+            if (command.equals("q")) break;
+            else if (command.equals("s")) {
+                System.out.print("Введите первое число: ");
+                double a = scanner.nextDouble();
+                System.out.print("Введите оператор (+, -, *, /): ");
+                String operator = scanner.next();
+                System.out.print("Введите второе число: ");
+                double b = scanner.nextDouble();
                 switch (operator) {
                     case ("+"):
                         System.out.println(a + " + " + b + " = " + (a + b));
@@ -35,7 +33,6 @@ public class Main {
                     default: System.out.println("Введен неверный оператор");
                 }
             }
-           if (command.charAt(0) == 'q') break;
         }
     }
 }
