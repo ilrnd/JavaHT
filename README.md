@@ -1,3 +1,3 @@
-**Домашнее задание после 4-го семинара:
+**Домашнее задание после 5-го семинара:
 
-https://github.com/ilrnd/JavaHT/tree/main/HT_Seminar4/src/main/java/org/example
+https://github.com/ilrnd/JavaHT/tree/main/HT_Seminar5/src/main/java/org/example
